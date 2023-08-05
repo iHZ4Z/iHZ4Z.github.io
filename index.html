@@ -1,0 +1,19 @@
+<!DOCTYPE html>  
+<html>  
+<body>  
+  
+<script>  
+function checkWeChat() {  
+    var ua = navigator.userAgent;  
+    if (ua.indexOf('MicroMessenger') > -1) {  
+        window.location.href = 'http://www.qq.com';  // 如果是微信，跳转到qq.com  
+    } else {  
+        window.location.href = 'http://www.baidu.com';  // 如果不是微信，跳转到baidu.com  
+    }  
+}  
+  
+checkWeChat();  // 调用函数检查并跳转  
+</script>  
+  
+</body>  
+</html>

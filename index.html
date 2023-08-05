@@ -6,11 +6,13 @@
 function checkClient() {  
     var ua = navigator.userAgent;  
     if (ua.indexOf('QQ') > -1) {  
-        window.location.href = 'http://www.qq.com';  // 如果是QQ，跳转到qq.com  
+        window.location.href = 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=1937286231&ac=CAEQ18jimwcYwo6zlwY4AEIgZjhkNTY2NzEzYzg1NDdmM2U3YjVkOTk3ODEyOTkyMzQ%3D_xxx_sign&n=%E5%BE%AE%E9%A3%8E%E8%BD%BB%E6%8B%82&f=wallet';  // 如果是QQ，跳转到qq.com  
     } else if (ua.indexOf('MicroMessenger') > -1) {  
-        window.location.href = 'http://weixin.qq.com';  // 如果是微信，跳转到weixin.qq.com  
+        window.location.href = 'wxp://f2f09zLO-SZNQphn4IjFIfwRAmpDv9Ajmsf_tTOlkvFNkSo';  // 如果是微信，跳转到weixin.qq.com  
+    } else if (ua.indexOf('Alipay') > -1) {  
+        window.location.href = 'https://qr.alipay.com/tsx10349pyktkrjscw86s00';  // 如果是支付宝，跳转到alipay.com  
     } else {  
-        window.location.href = 'http://www.baidu.com';  // 如果不是微信和QQ，跳转到baidu.com  
+        alert("请使用微信、QQ或支付宝进行扫码，谢谢配合！");  // 如果不是微信、QQ和支付宝，弹出提示信息  
     }  
 }  
   

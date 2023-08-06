@@ -9,9 +9,9 @@ function getSystemTheme() {
   
 var theme = getSystemTheme();  
 if (theme === "text/css") {  
-  document.body.classList.add("dark-mode");  
-} else {  
   document.body.classList.add("light-mode");  
+} else {  
+  document.body.classList.add("dark-mode");  
 } 
 var imageElement = document.getElementById('myImage');  
 // 根据系统主题选择不同的图片  

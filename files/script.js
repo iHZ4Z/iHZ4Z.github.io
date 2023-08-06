@@ -18,7 +18,7 @@ var imageElement = document.getElementById('myImage');
 if (isDarkColor(systemThemeColor)) {  
   imageElement.src = "./files/dark_image.png";  
 } else {  
-  imageElement.src = "./files/light_image.jpeg";
+  imageElement.src = "./files/light_image.png";
 }   
     
   function isDarkColor(color) {  
